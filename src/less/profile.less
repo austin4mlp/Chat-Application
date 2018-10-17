@@ -1,0 +1,145 @@
+.profile {
+	padding: 20px;
+	border: 2px solid #262626;
+	border-radius: 10px;
+	font-family: 'Molengo', Georgia, Times, serif;
+	font-size: 20px;
+	color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.editProfile {
+	text-align: center;
+	margin-top: 20px;
+	padding: 20px;
+	border: 2px solid #262626;
+	border-radius: 10px;
+	font-family: 'Molengo', Georgia, Times, serif;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.gallery {
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	font-family: 'Molengo', Georgia, Times, serif;
+	font-size: 20px;
+	color: #FFFFFF;
+    position: absolute;
+    width: ~"calc(100% - 40px)";
+    height: ~"calc(100% - 40px)";
+    top: 0;
+}
+
+.userProfileCredentials {
+    display: inline-block;
+    float: left;
+    >.userImg {
+        width: 120px;
+        height: 120px;
+        float: left;
+        position: relative;
+        .cropIcon {
+            font-size: 12px;
+            position: absolute;
+            top: 0;
+            right:0;
+            opacity: 0.1;
+            transition: opacity 0.5s;
+            &:hover {
+                opacity: 1;
+                transition: opacity 0.5s;
+            }
+        }
+        .image { 
+            width: 120px;
+            height: 120px;
+            background-size: cover;
+            border-radius: 100%;
+            background-position: center;
+        }
+    }
+    >.userInfo {
+        float: right;
+        margin: 0px 0px 0px 20px;
+        h2 {
+            margin: 0;
+        }
+        h5 {
+            margin: 0;
+            font-style: italic;
+        }
+    }
+}
+
+.profileButtonsWrapper {
+    display: inline-block;
+    float: right;
+    margin: 0px 40px 0px 0px;
+    line-height: 120px;
+    > input {
+        width: auto !important;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.profileInput {
+	width: 20%;
+	padding: 7px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	font-family: 'Molengo', Georgia, Times, serif;
+}
+
+textarea {
+	width: 20%;
+	padding: 7px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	font-family: 'Molengo', Georgia, Times, serif;
+}
+
+input[type="submit"],input[type="button"] {
+	width: 20%;
+	padding: 7px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	font-family: 'Molengo', Georgia, Times, serif;
+}
+
+input[type="submit"]:hover,input[type="button"]:hover {
+	width: 20%;
+	padding: 7px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	font-family: 'Molengo', Georgia, Times, serif;
+	font-weight: bold;
+	background-color: #808080;
+}
+
+.profileText {
+	font-family: 'Molengo', Georgia, Times, serif;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.galleryImages {
+    list-style-type: none;
+    height: 90%;
+    >.galleryImg, img {
+        display: inline-block;
+        min-height: 200px;
+        max-height: 400px;
+        height: 30%;
+        margin: 5px;
+        border: none;
+        .selected {
+            border: 1.5px solid blue;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Chat-Application",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "base64-img": "*",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "angular": "*",
+    "angular-resource": "*",
+    "angular-ui-router": "*",
+    "angular-jwt": "*",
+    "angular-cookies": "*",
+    "ui-cropper": "*",
+    "ng-dialog": "*",
+    "redis": "*",
+    "mongoose": "*",
+    "connect-redis": "*",
+    "colors": "*",
+    "dotenv": "*",
+    "gm": "*",
+    "jsonwebtoken": "*",
+    "socket.io": "*",
+    "socketio-jwt-auth": "*",
+    "cors": "*",
+    "multer": "*",
+    "js-sha256": "*",
+    "randomstring": "*",
+    "rimraf": "*",
+    "jquery": "*",
+    "mongodb": "*",
+    "perfect-scrollbar": "*"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-exec": "*",
+    "colors": "*"
+  }
+}

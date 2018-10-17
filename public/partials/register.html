@@ -1,0 +1,23 @@
+<form enctype="multipart/form-data" ng-submit="register()"  id="registerForm">
+<div class="inputField">
+<img src="../images/5.5chan logo.fw.png" alt="Fuck you, Dreamweaver. Making us use alt tags and shit." class="header" />
+<br>
+<br>
+<input type="text" name="username" placeholder="Username" ng-model="user.username" ng-blur="validate(user.username, 'username')">
+<p class="inputError">{[{ errors.username }]}</p>
+<input type="password" name="password" placeholder="Password" ng-model="user.password" ng-blur="validate(user.password, 'password')">
+<p class="inputError">{[{ errors.password }]}</p>
+<input type="text" name="email" placeholder="Email" ng-model="user.email" ng-blur="validate(user.email, 'email')">
+<p class="inputError">{[{ errors.email }]}</p>
+<textarea maxlength="150" type="text" name="desc" placeholder="Description" ng-model="user.desc" ng-blur="validate(user.desc, 'desc')"></textarea>
+<p class="inputError">{[{ errors.desc }]}</p>    
+<i class="fas fa-file-image"><input style="opacity: 0" name='profile' type="file" onchange="angular.element(this).scope().changeFile(this.files)" /></i>&shy;&shy;<p>{[{ currentFile.name }]}</p>
+<p class="inputError">{[{ errors.profile }]}</p> 
+<input type="submit" value="Register">
+<p>
+</p>
+<a ui-sref="login">
+<input type="button" value="Already registered? Login here.">
+</a>
+</div>
+</form>
