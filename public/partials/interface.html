@@ -9,7 +9,7 @@
           <div class="chatSidebarDivider"></div>    
             <ul>
                 <li ng-repeat="arrUser in joinedUsers | orderBy : 'username'">
-                     <div class="sidebarProfileImg" style="background-image: url({[{ arrUser.uri }]}{[{ arrUser.thumb == true && arrUser.cropped == false ? 'thumb' : ' ' }]}{[{ arrUser.cropped == true ? 'cropped' : '' }]}.{[{ arrUser.cropped == true ? 'png' : arrUser.type }]}) "></div><h3 ng-class="arrUser.username == user.username ? 'chatCurrentUser' : 'chatUsername'">{[{ arrUser.username }]}</h3>    
+                     <div class="sidebarProfileImg" style="background-image: url({[{ arrUser.uri }]}{[{ arrUser.cropped == true ? 'cropped' : 'thumb' }]}.{[{ arrUser.cropped == true ? 'png' : arrUser.type }]}) "></div><h3 ng-class="arrUser.username == user.username ? 'chatCurrentUser' : 'chatUsername'">{[{ arrUser.username }]}</h3>    
                 </li>    
             </ul>    
         </div>
